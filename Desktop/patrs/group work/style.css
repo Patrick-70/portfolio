@@ -1,0 +1,453 @@
+/* style.css - Inventory Management System
+   External CSS for text and link formatting */
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f4f7fc;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* Container for consistent layout */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 0.3rem;
+}
+
+header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Navigation Styles */
+nav {
+    background-color: #2c3e50;
+    padding: 0.8rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0.8rem 1.5rem;
+    display: block;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+/* Rollover effect for navigation links */
+nav ul li a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Current page indicator */
+nav ul li a.active {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Main Content Area */
+main {
+    padding: 2rem 0;
+    min-height: 70vh;
+}
+
+/* Headings */
+h2 {
+    color: #1e3c72;
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #3498db;
+}
+
+h3 {
+    color: #2c3e50;
+    margin-bottom: 1rem;
+}
+
+/* Link Styles */
+a {
+    color: #3498db;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #1e3c72;
+    text-decoration: underline;
+}
+
+/* Absolute link style */
+.absolute-link {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: #f39c12;
+    color: white;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.absolute-link:hover {
+    background-color: #e67e22;
+    text-decoration: none;
+    color: white;
+}
+
+/* Layout Table (Invisible borders) */
+.layout-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 2rem;
+}
+
+.layout-table td {
+    padding: 1rem;
+    vertical-align: top;
+    border: none;
+}
+
+.layout-table .sidebar {
+    width: 30%;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.layout-table .main-content {
+    width: 70%;
+}
+
+/* Data Table (Visible borders) */
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1.5rem 0;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.data-table th {
+    background-color: #1e3c72;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+.data-table td {
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+}
+
+.data-table tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.data-table tr:hover {
+    background-color: #e9f2f9;
+}
+
+/* Image Styles */
+
+/* Rollover Image */
+.rollover-container {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.rollover-image {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://picsum.photos/400/200?random=1');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.3s ease;
+}
+
+.rollover-image:hover {
+    background-image: url('https://picsum.photos/400/200?random=2');
+}
+
+/* Hyperlinked Image */
+.hyperlinked-image {
+    display: inline-block;
+    margin: 1rem 0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.hyperlinked-image:hover {
+    transform: scale(1.05);
+}
+
+.hyperlinked-image img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Box Model Image */
+.box-model-image {
+    width: 200px;
+    padding: 15px;
+    margin: 20px auto;
+    border: 5px solid #3498db;
+    border-radius: 10px;
+    background-color: #ecf0f1;
+    position: relative;
+    left: 50px;
+    top: 10px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.2);
+}
+
+.box-model-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+.box-model-image p {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+/* Form Styles */
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="number"],
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+}
+
+.radio-option, .checkbox-option {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.radio-option input[type="radio"],
+.checkbox-option input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.radio-option label,
+.checkbox-option label {
+    margin: 0;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.btn {
+    background-color: #3498db;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+.btn-primary {
+    background-color: #27ae60;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background-color: #229954;
+}
+
+/* Status Indicators */
+.status {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.in-stock {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+.low-stock {
+    background-color: #fff3cd;
+    color: #856404;
+}
+
+.out-stock {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 2rem 0 1rem;
+    margin-top: 3rem;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 1rem;
+}
+
+.footer-section h4 {
+    color: #3498db;
+    margin-bottom: 1rem;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-section ul li a {
+    color: #ecf0f1;
+}
+
+.footer-section ul li a:hover {
+    color: #3498db;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #3a506b;
+    font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li a {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .layout-table, .layout-table td {
+        display: block;
+        width: 100%;
+    }
+    
+    .layout-table .sidebar,
+    .layout-table .main-content {
+        width: 100%;
+    }
+    
+    .box-model-image {
+        left: 0;
+        margin: 20px auto;
+    }
+}

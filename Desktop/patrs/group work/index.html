@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StockFlow Pro - Inventory Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>📦 StockFlow Pro</h1>
+            <p>Intelligent Inventory Management System</p>
+        </div>
+    </header>
+    
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="index.html" class="active">Dashboard</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="add-item.html">Add Item</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <h2>📊 Dashboard Overview</h2>
+        
+        <a href="#container" class="container">
+            <h2>Learn More About Us</h2>
+        </a>
+        <!-- Layout Table with invisible borders -->
+        <table class="layout-table">
+            <tr>
+                <td class="main-content">
+                    <!-- Rollover Image -->
+                    <h3>Warehouse Snapshot</h3>
+                    <div class="rollover-container">
+                        <div class="rollover-image"></div>
+                    </div>
+                    <p><em>Hover over the image to see warehouse at night</em></p>
+                    
+                    <!-- Hyperlinked Image -->
+                    <h3>Quick Reports</h3>
+                    <a href="inventory.html" class="hyperlinked-image">
+                        <img src="https://picsum.photos/200/150?random=3" alt="View Inventory">
+                    </a>
+                    <p>Click image above to view full inventory</p>
+                </td>
+                <td class="sidebar">
+                    <!-- Box Model Image -->
+                    <h3>Featured Product</h3>
+                     <div class="box-model-image">
+                        <img src="https://picsum.photos/200/150?random=4" alt="Product">
+                        <p>Premium Widget</p>
+                    </div>
+                    <p style="margin-top: 60px;">This image demonstrates CSS box model with padding, margin, border, and positioning</p>
+                    
+                    <h3>Quick Stats</h3>
+                    <p>📊 Total Items: 1,247</p>
+                    <p>⚠️ Low Stock: 23</p>
+                    <p>📦 Out of Stock: 5</p>
+                </td>
+            </tr>
+        </table>
+        
+        <!-- Data Table with visible borders -->
+        <h3>Recent Inventory Updates</h3>
+        <table class="data-table">
+            <tr>
+                <th>Item ID</th>
+                <th>Product Name</th>
+                <th>Category</th>
+                <th>Quantity</th>
+                <th>Status</th>
+            </tr>
+            <tr>
+                <td>#INV-001</td>
+                <td>Wireless Mouse</td>
+                <td>Electronics</td>
+                <td>245</td>
+                <td><span class="status in-stock">In Stock</span></td>
+            </tr>
+            <tr>
+                <td>#INV-002</td>
+                <td>Office Chair</td>
+                <td>Furniture</td>
+                <td>12</td>
+                <td><span class="status low-stock">Low Stock</span></td>
+            </tr>
+            <tr>
+                <td>#INV-003</td>
+                <td>USB-C Cable</td>
+                <td>Accessories</td>
+                <td>0</td>
+                <td><span class="status out-stock">Out of Stock</span></td>
+            </tr>
+        </table>
+        
+        <!-- Absolute Link -->
+        <h3>External Resources</h3>
+        <a href="https://www.investopedia.com/terms/i/inventory-management.asp" target="_blank" class="absolute-link">
+            📚 Learn About Inventory Management
+        </a>
+    </main>
+    
+    <footer>
+        <div class="container" id="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>StockFlow Pro</h4>
+                    <p>Professional inventory management for modern businesses.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Dashboard</a></li>
+                        <li><a href="inventory.html">Inventory</a></li>
+                        <li><a href="add-item.html">Add Item</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>📧 info@stockflow.com</p>
+                    <p>📞 (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 StockFlow Pro. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
