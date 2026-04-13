@@ -386,3 +386,65 @@ nav a.active {
   background: #00ff87;
   border-radius: 20px;
 }
+@media screen and (max-width: 768px) {
+
+  /* MAIN LAYOUT */
+  .main {
+    padding: 15px;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero img {
+    width: 110px;
+  }
+
+  /* STATS STACK */
+  .stats {
+    grid-template-columns: 1fr;
+  }
+
+  /* CARDS FULL WIDTH */
+  .card {
+    padding: 18px;
+  }
+
+  /* GRID SECTIONS STACK */
+  .project-grid,
+  .career-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* SKILLS CENTER */
+  .skills {
+    justify-content: center;
+  }
+
+  /* SIDEBAR SMALLER */
+  .sidebar {
+    width: 240px;
+  }
+
+  /* BUTTON BIGGER (mobile friendly) */
+  .menu-btn {
+    font-size: 24px;
+    padding: 12px 15px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 80%;
+    max-width: 280px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
