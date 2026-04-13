@@ -232,6 +232,8 @@ nav a.active {
   padding: 20px;
   border-right: 1px solid #1f2937;
   position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .sidebar h2 {
@@ -260,10 +262,14 @@ nav a.active {
   background: #1f2937;
   color: #00ff87;
 }
+.sidebar a.active {
+  background: #1f2937;
+  color: #00ff87;
+}
 
 /* MAIN */
 .main {
-  margin-left: 220px;
+  margin-right: 220px;
   padding: 30px;
   width: 100%;
 }
@@ -428,23 +434,12 @@ nav a.active {
   .sidebar {
     width: 240px;
   }
-
-  /* BUTTON BIGGER (mobile friendly) */
-  .menu-btn {
-    font-size: 24px;
-    padding: 12px 15px;
+  .main {
+    margin-right: 240px;
   }
 }
-@media screen and (max-width: 768px) {
-  .sidebar {
-    width: 80%;
-    max-width: 280px;
-  }
-}
-html {
-  scroll-behavior: smooth;
-}
-
-button, a {
-  -webkit-tap-highlight-color: transparent;
+.container {
+  max-width: 900px;
+  margin-left: 260px;
+  padding: 20px;
 }
