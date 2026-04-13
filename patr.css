@@ -60,7 +60,7 @@ nav a.active {
 
 .hero img {
   width: 140px;
-  border-radius: 50%;
+  border-radius: 25%;
   border: 3px solid #00ff87;
   margin-bottom: 15px;
 }
