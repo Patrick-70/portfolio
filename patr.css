@@ -1,4 +1,3 @@
-/* RESET */
 * {
   margin: 0;
   padding: 0;
@@ -423,4 +422,68 @@ nav a.active {
 .career-card,
 .contact-card {
   will-change: transform;
+}
+@media (max-width: 768px) {
+
+  /* NAVBAR */
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  /* SIDEBAR → TURN INTO TOP BAR */
+  .sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #1f2937;
+  }
+
+  .sidebar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  /* MAIN CONTENT */
+  .main {
+    margin: 0;
+    padding: 20px;
+  }
+
+  .container {
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  /* HERO */
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero img {
+    width: 100px;
+  }
+
+  /* CARDS */
+  .card {
+    padding: 20px;
+  }
+
+  /* GRID FIXES */
+  .contact-grid,
+  .project-grid,
+  .career-grid {
+    grid-template-columns: 1fr;
+  }
+
 }
